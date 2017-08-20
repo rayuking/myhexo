@@ -73,7 +73,7 @@ pagination_dir: page
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 ##github 不支持 theme: landscape
-theme: next
+theme: jekyll-theme-time-machine
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
