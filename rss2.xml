@@ -8,43 +8,27 @@
     <atom:link href="/myhexo/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>慢慢的被锤骟,难免哼哧几句</description>
-    <pubDate>Thu, 10 May 2018 13:42:19 GMT</pubDate>
+    <pubDate>Thu, 10 May 2018 14:34:29 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
       <title>Hexo框架下Next主题优化</title>
-      <link>http://zerolei.com/myhexo/2018/05/10/%E6%B5%8B%E8%AF%95%E6%96%B0%E5%8A%9F%E8%83%BD/</link>
-      <guid>http://zerolei.com/myhexo/2018/05/10/%E6%B5%8B%E8%AF%95%E6%96%B0%E5%8A%9F%E8%83%BD/</guid>
+      <link>http://zerolei.com/myhexo/2018/05/10/Hexo%E6%A1%86%E6%9E%B6%E4%B8%8BNext%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/</link>
+      <guid>http://zerolei.com/myhexo/2018/05/10/Hexo%E6%A1%86%E6%9E%B6%E4%B8%8BNext%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/</guid>
       <pubDate>Thu, 10 May 2018 12:37:04 GMT</pubDate>
       <description>
       
-        &lt;img src=&quot;/myhexo/2018/05/10/测试新功能/myhexo/2018/05/10/测试新功能/old-page-foot.png&quot; title=&quot;This is an example image&quot;&gt;
-&lt;img src=&quot;/myhexo/2018/05/10/测试新功能/myhexo/2018/05/10/测试新功能/myface1.jpg&quot; title=&quot;example image&quot;&gt;
-&lt;p&gt;&lt;img src=&quot;/myhexo/2018/05/10/测试新功能/ttt/myhead.jpg&quot; alt=&quot;头像&quot;&gt;&lt;/p&gt;
+        &lt;p&gt;有人已经总结的很好了 &lt;a href=&quot;https://zhuanlan.zhihu.com/p/33616481&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo搭建的GitHub博客之优化大全&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;这里补充几点&lt;/p&gt;
+&lt;h3 id=&quot;更改页脚&quot;&gt;&lt;a href=&quot;#更改页脚&quot; class=&quot;headerlink&quot; title=&quot;更改页脚&quot;&gt;&lt;/a&gt;更改页脚&lt;/h3&gt;&lt;p&gt;原页脚&lt;br&gt;&lt;img src=&quot;/myhexo/2018/05/10/Hexo框架下Next主题优化/old-page-foot.png&quot; alt=&quot;old-page-foot&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;实现方法&quot;&gt;&lt;a href=&quot;#实现方法&quot; class=&quot;headerlink&quot; title=&quot;实现方法&quot;&gt;&lt;/a&gt;实现方法&lt;/h3&gt;&lt;p&gt;在路径&lt;code&gt;\themes\next\layout\\_partials\footer.swig&lt;/code&gt;下&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo new &lt;span class=&quot;string&quot;&gt;&quot;My New Post&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
       
       </description>
       
-      <content:encoded><![CDATA[<img src="/myhexo/2018/05/10/测试新功能/myhexo/2018/05/10/测试新功能/old-page-foot.png" title="This is an example image"><img src="/myhexo/2018/05/10/测试新功能/myhexo/2018/05/10/测试新功能/myface1.jpg" title="example image"><p><img src="/myhexo/2018/05/10/测试新功能/ttt/myhead.jpg" alt="头像"></p><a id="more"></a>]]></content:encoded>
+      <content:encoded><![CDATA[<p>有人已经总结的很好了 <a href="https://zhuanlan.zhihu.com/p/33616481" target="_blank" rel="noopener">Hexo搭建的GitHub博客之优化大全</a></p><p>这里补充几点</p><h3 id="更改页脚"><a href="#更改页脚" class="headerlink" title="更改页脚"></a>更改页脚</h3><p>原页脚<br><img src="/myhexo/2018/05/10/Hexo框架下Next主题优化/old-page-foot.png" alt="old-page-foot"></p><h3 id="实现方法"><a href="#实现方法" class="headerlink" title="实现方法"></a>实现方法</h3><p>在路径<code>\themes\next\layout\\_partials\footer.swig</code>下</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><a id="more"></a>]]></content:encoded>
       
-      <comments>http://zerolei.com/myhexo/2018/05/10/%E6%B5%8B%E8%AF%95%E6%96%B0%E5%8A%9F%E8%83%BD/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>ttt</title>
-      <link>http://zerolei.com/myhexo/2018/05/03/ttt/</link>
-      <guid>http://zerolei.com/myhexo/2018/05/03/ttt/</guid>
-      <pubDate>Thu, 03 May 2018 15:18:09 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;斯蒂芬归还&lt;br&gt;&lt;img src=&quot;/myhexo/2018/05/03/ttt/myhead.jpg&quot; alt=&quot;头像&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/myhexo/2018/05/03/ttt/myhead.jpg&quot; alt=&quot;头像&quot;&gt;&lt;br&gt;&lt;blockquote&gt;&lt;p&gt;content&lt;/p&gt;
-&lt;footer&gt;&lt;strong&gt;[author[&lt;/strong&gt;&lt;cite&gt;source]] [link] [source_link_title]&lt;/cite&gt;&lt;/footer&gt;&lt;/blockquote&gt;&lt;br&gt;&lt;/p&gt;
-      
-      </description>
-      
-      <content:encoded><![CDATA[<p>斯蒂芬归还<br><img src="/myhexo/2018/05/03/ttt/myhead.jpg" alt="头像"></p><p><img src="/myhexo/2018/05/03/ttt/myhead.jpg" alt="头像"><br><blockquote><p>content</p><footer><strong>[author[</strong><cite>source]] [link] [source_link_title]</cite></footer></blockquote><br><a id="more"></a></p><p><img src="/myhexo/2018/05/03/ttt/myhead.jpg" alt="头像"></p><figure class="highlight plain"><figcaption><span>[title] [] [url] [link text]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">code snippet</span><br></pre></td></tr></table></figure><!-- more --><p>普通的代码块</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alert(&apos;Hello World!&apos;);</span><br></pre></td></tr></table></figure><p>alert(‘Hello World!’);</p><p>指定语言</p><figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[rectangle setX: <span class="number">10</span> y: <span class="number">10</span> width: <span class="number">20</span> height: <span class="number">20</span>];</span><br></pre></td></tr></table></figure><p>[rectangle setX: 10 y: 10 width: 20 height: 20];</p><p>附加说明</p><figure class="highlight plain"><figcaption><span>Array.map</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">array.map(callback[, thisArg])</span><br></pre></td></tr></table></figure><p>Array.map</p><p>array.map(callback[, thisArg])</p>]]></content:encoded>
-      
-      <comments>http://zerolei.com/myhexo/2018/05/03/ttt/#disqus_thread</comments>
+      <comments>http://zerolei.com/myhexo/2018/05/10/Hexo%E6%A1%86%E6%9E%B6%E4%B8%8BNext%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/#disqus_thread</comments>
     </item>
     
   </channel>
