@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[Hexo框架下Next主题优化]]></title>
+    <url>%2Fmyhexo%2F2018%2F05%2F10%2F%E6%B5%8B%E8%AF%95%E6%96%B0%E5%8A%9F%E8%83%BD%2F</url>
+    <content type="text"><![CDATA[]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[ttt]]></title>
+    <url>%2Fmyhexo%2F2018%2F05%2F03%2Fttt%2F</url>
+    <content type="text"><![CDATA[斯蒂芬归还 content [author[source]] [link] [source_link_title] [title] [] [url] [link text]1code snippet 普通的代码块 1alert(&apos;Hello World!&apos;); alert(‘Hello World!’); 指定语言 1[rectangle setX: 10 y: 10 width: 20 height: 20]; [rectangle setX: 10 y: 10 width: 20 height: 20]; 附加说明 Array.map1array.map(callback[, thisArg]) Array.map array.map(callback[, thisArg])]]></content>
+      <categories>
+        <category>love</category>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>中文</tag>
+      </tags>
+  </entry>
+</search>
