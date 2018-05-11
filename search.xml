@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[Hexo框架下Next主题优化]]></title>
     <url>%2Fmyhexo%2F2018%2F05%2F10%2FHexo%E6%A1%86%E6%9E%B6%E4%B8%8BNext%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96%2F</url>
-    <content type="text"><![CDATA[有人已经总结的很好了 Hexo搭建的GitHub博客之优化大全 这里补充几点 更改页脚原页脚 实现方法在路径\themes\next\layout\\_partials\footer.swig下 1$ hexo new "My New Post"]]></content>
+    <content type="text"><![CDATA[&#160;&#160;&#160;&#160;&#160;&#160;&#160;wangwlj已经总结的很好了 Hexo搭建的GitHub博客之优化大全 , 这里就切换中文,更改页脚,添加支持HTTPS补充三点 0x00 更改Next主题默认语言为中文,并不是常见的zh-CN在文件themes\next\_config.yml中 language: zh-Hans 0x01 更改页脚原页脚: 在文件\themes\next\layout\_partials\footer.swig中 1234&#123;% if theme.footer.powered %&#125; &lt;div class="powered-by"&gt;&#123;# #&#125;&#123;&#123; __('footer.powered', '&lt;a class="theme-link" target="_blank" href="https://hexo.io"&gt;Hexo&lt;/a&gt;') &#125;&#125;&#123;##&#125;&lt;/div&gt; 修改后的效果:详见Hexo-Next底部logo栏更改 0x02 给自定义域名添加支持 HTTPS&#160;&#160;&#160;&#160;&#160;&#160;&#160;简单来说，除了 HTTPS 自身带来的加密、防劫持等特性外，Github 官方基于 HTTPS 配合 CND，使得网站的加载速度更快，还能提供额外的防御 DDoS 攻击的保护。&#160;&#160;&#160;&#160;&#160;&#160;&#160;GitHub Pages Blog 原文：Custom domains on GitHub Pages gain support for HTTPS &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;未绑自定义人域名之前只需要到setting页勾选enforce HTTPS之后再绑定域名即可; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;但是因为之前已经开启了自定义域名， enforce HTTPS 无法勾选且怎么办？如图需要 把 Custom domain 中的值清空，并点击 Save 进行保存； 在 Custom domain 中的填入之前清空的值，我这里是 zerolei.com ，填入后点击保存； 尝试在浏览器里主动访问 https://zerolei.com ，地址要根据自己的情况，注意协议类型是 https，正确情况下是能正常访问的； 刷新项目设置页，如果 enforce HTTPS 可勾选，勾选即可； 如果 enforce HTTPS 不可勾选，并且提示 Not yet available for your site because the certificate has not finished being issued”如图 说明证书尚未申请完成，等待一天即可。]]></content>
       <categories>
         <category>Hexo</category>
       </categories>

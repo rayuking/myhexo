@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next gemini use-motion" lang="zh-CN">
+<html class="theme-next gemini use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -87,7 +87,7 @@
 <meta property="og:url" content="http://zerolei.com/myhexo/index.html">
 <meta property="og:site_name" content="Blog测试版">
 <meta property="og:description" content="慢慢被锤骟,偶尔哼哧几句">
-<meta property="og:locale" content="zh-CN">
+<meta property="og:locale" content="zh-Hans">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Blog测试版">
 <meta name="twitter:description" content="慢慢被锤骟,偶尔哼哧几句">
@@ -106,7 +106,7 @@
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     duoshuo: {
       userId: '0',
-      author: 'Author'
+      author: '博主'
     },
     algolia: {
       applicationID: '',
@@ -138,7 +138,7 @@
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
   
@@ -240,7 +240,7 @@
             
               <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
             
-            Search
+            搜索
           </a>
         </li>
       
@@ -260,7 +260,7 @@
     </span>
     <div class="local-search-input-wrapper">
       <input autocomplete="off"
-             placeholder="Searching..." spellcheck="false"
+             placeholder="搜索..." spellcheck="false"
              type="text" id="local-search-input">
     </div>
   </div>
@@ -322,15 +322,19 @@
 
         <div class="post-meta">
 		  
+			<i class="fa fa-thumb-tack"></i>
+			<font color=7D26CD>置顶</font>
+			<span class="post-meta-divider">|</span>
+		  
           <span class="post-time">
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-10T20:37:04+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-10T20:37:04+08:00">
                 2018-05-10
               </time>
             
@@ -349,7 +353,7 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">In</span>
+                <span class="post-meta-item-text">分类于</span>
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
@@ -381,10 +385,10 @@
                   <i class="fa fa-file-word-o"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">Words count in article&#58;</span>
+                  <span class="post-meta-item-text">字数统计&#58;</span>
                 
-                <span title="Words count in article">
-                  54
+                <span title="字数统计">
+                  426
                 </span>
               
 
@@ -410,15 +414,17 @@
 
       
         
-          <p>有人已经总结的很好了 <a href="https://zhuanlan.zhihu.com/p/33616481" target="_blank" rel="noopener">Hexo搭建的GitHub博客之优化大全</a></p>
-<p>这里补充几点</p>
-<h3 id="更改页脚"><a href="#更改页脚" class="headerlink" title="更改页脚"></a>更改页脚</h3><p>原页脚<br><img src="/myhexo/2018/05/10/Hexo框架下Next主题优化/old-page-foot.png" alt="old-page-foot"></p>
-<h3 id="实现方法"><a href="#实现方法" class="headerlink" title="实现方法"></a>实现方法</h3><p>在路径<code>\themes\next\layout\\_partials\footer.swig</code>下</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+          <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;wangwlj已经总结的很好了  <a href="https://zhuanlan.zhihu.com/p/33616481" target="_blank" rel="noopener">Hexo搭建的GitHub博客之优化大全</a> , 这里就切换中文,更改页脚,添加支持HTTPS补充三点</p>
+<h3 id="0x00-更改Next主题默认语言为中文-并不是常见的zh-CN"><a href="#0x00-更改Next主题默认语言为中文-并不是常见的zh-CN" class="headerlink" title="0x00 更改Next主题默认语言为中文,并不是常见的zh-CN"></a>0x00 更改Next主题默认语言为中文,并不是常见的zh-CN</h3><p>在文件<code>themes\next\_config.yml</code>中</p>
+<p><code>language: zh-Hans</code></p>
+<h3 id="0x01-更改页脚"><a href="#0x01-更改页脚" class="headerlink" title="0x01 更改页脚"></a>0x01 更改页脚</h3><p>原页脚:<br><img src="/myhexo/2018/05/10/Hexo框架下Next主题优化/old-page-foot.png" alt="old-page-foot"></p>
+<p>在文件<code>\themes\next\layout\_partials\footer.swig</code>中</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;% <span class="keyword">if</span> theme.footer.powered %&#125;</span><br><span class="line">  &lt;div class=<span class="string">"powered-by"</span>&gt;&#123;<span class="comment">#</span></span><br><span class="line">  <span class="comment">#&#125;&#123;&#123; __('footer.powered', '&lt;a class="theme-link" target="_blank" href="https://hexo.io"&gt;Hexo&lt;/a&gt;') &#125;&#125;&#123;#</span></span><br><span class="line"><span class="comment">#&#125;&lt;/div&gt;</span></span><br></pre></td></tr></table></figure>
+<p>修改后的效果:<img src="/myhexo/2018/05/10/Hexo框架下Next主题优化/new-page-foot.png" alt="new-page-foot"><br>详见<a href="https://www.jianshu.com/p/4fbc57269f1b" target="_blank" rel="noopener">Hexo-Next底部logo栏更改</a></p>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/myhexo/2018/05/10/Hexo框架下Next主题优化/#more" rel="contents">
-              Read more &raquo;
+              阅读全文 &raquo;
             </a>
           </div>
           <!--/noindex-->
@@ -506,7 +512,7 @@
                 <a href="/myhexo/archives">
               
                   <span class="site-state-item-count">1</span>
-                  <span class="site-state-item-name">posts</span>
+                  <span class="site-state-item-name">日志</span>
                 </a>
               </div>
             
@@ -517,7 +523,7 @@
               <div class="site-state-item site-state-categories">
                 <a href="/myhexo/categories/index.html">
                   <span class="site-state-item-count">1</span>
-                  <span class="site-state-item-name">categories</span>
+                  <span class="site-state-item-name">分类</span>
                 </a>
               </div>
             
@@ -528,7 +534,7 @@
               <div class="site-state-item site-state-tags">
                 <a href="/myhexo/tags/index.html">
                   <span class="site-state-item-count">1</span>
-                  <span class="site-state-item-name">tags</span>
+                  <span class="site-state-item-name">标签</span>
                 </a>
               </div>
             
@@ -601,12 +607,12 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">54</span>
+    <span title="Site words total count">426</span>
   
 </div>
 
 
-  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+  <div class="powered-by">个人网站 <a class="theme-link" target="_blank" href="http://zerolei.com">Z</a></div>
 
 
 
@@ -614,7 +620,7 @@
 
 
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+  <div class="theme-info">时间轴 &mdash; <a class="theme-link" target="_blank" href="http://zerolei.com"">T</a></div>
 
 
 
