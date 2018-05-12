@@ -4,7 +4,7 @@
   xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Blog测试版</title>
-    <link>http://zerolei.com/myhexo/</link>
+    <link>https://zerolei.com/myhexo/</link>
     <atom:link href="/myhexo/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>慢慢被锤骟,偶尔哼哧几句</description>
@@ -13,8 +13,8 @@
     
     <item>
       <title>Hexo框架下Next主题优化</title>
-      <link>http://zerolei.com/myhexo/2018/05/10/Hexo%E6%A1%86%E6%9E%B6%E4%B8%8BNext%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/</link>
-      <guid>http://zerolei.com/myhexo/2018/05/10/Hexo%E6%A1%86%E6%9E%B6%E4%B8%8BNext%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/</guid>
+      <link>https://zerolei.com/myhexo/2018/05/10/Hexo%E6%A1%86%E6%9E%B6%E4%B8%8BNext%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/</link>
+      <guid>https://zerolei.com/myhexo/2018/05/10/Hexo%E6%A1%86%E6%9E%B6%E4%B8%8BNext%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/</guid>
       <pubDate>Thu, 10 May 2018 12:37:04 GMT</pubDate>
       <description>
       
@@ -30,7 +30,7 @@
       
       <content:encoded><![CDATA[<p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;wangwlj已经总结的很好了  <a href="https://zhuanlan.zhihu.com/p/33616481" target="_blank" rel="noopener">Hexo搭建的GitHub博客之优化大全</a> , 这里就切换中文,更改页脚,添加支持HTTPS补充三点</p><h3 id="0x00-更改Next主题默认语言为中文-并不是常见的zh-CN"><a href="#0x00-更改Next主题默认语言为中文-并不是常见的zh-CN" class="headerlink" title="0x00 更改Next主题默认语言为中文,并不是常见的zh-CN"></a>0x00 更改Next主题默认语言为中文,并不是常见的zh-CN</h3><p>在文件<code>themes\next\_config.yml</code>中</p><p><code>language: zh-Hans</code></p><h3 id="0x01-更改页脚"><a href="#0x01-更改页脚" class="headerlink" title="0x01 更改页脚"></a>0x01 更改页脚</h3><p>原页脚:<br><img src="/myhexo/2018/05/10/Hexo框架下Next主题优化/old-page-foot.png" alt="old-page-foot"></p><p>在文件<code>\themes\next\layout\_partials\footer.swig</code>中</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;% <span class="keyword">if</span> theme.footer.powered %&#125;</span><br><span class="line">  &lt;div class=<span class="string">"powered-by"</span>&gt;&#123;<span class="comment">#</span></span><br><span class="line">  <span class="comment">#&#125;&#123;&#123; __('footer.powered', '&lt;a class="theme-link" target="_blank" href="https://hexo.io"&gt;Hexo&lt;/a&gt;') &#125;&#125;&#123;#</span></span><br><span class="line"><span class="comment">#&#125;&lt;/div&gt;</span></span><br></pre></td></tr></table></figure><p>修改后的效果:<img src="/myhexo/2018/05/10/Hexo框架下Next主题优化/new-page-foot.png" alt="new-page-foot"><br>详见<a href="https://www.jianshu.com/p/4fbc57269f1b" target="_blank" rel="noopener">Hexo-Next底部logo栏更改</a></p><a id="more"></a><h3 id="0x02-给自定义域名添加支持-HTTPS"><a href="#0x02-给自定义域名添加支持-HTTPS" class="headerlink" title="0x02 给自定义域名添加支持 HTTPS"></a>0x02 给自定义域名添加支持 HTTPS</h3><p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;简单来说，除了 HTTPS 自身带来的加密、防劫持等特性外，Github 官方基于 HTTPS 配合 CND，使得网站的加载速度更快，还能提供额外的防御 DDoS 攻击的保护。<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;GitHub Pages Blog 原文：<a href="https://blog.github.com/2018-05-01-github-pages-custom-domains-https/" target="_blank" rel="noopener">Custom domains on GitHub Pages gain support for HTTPS</a></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;未绑自定义人域名之前只需要到setting页勾选<code>enforce HTTPS</code>之后再绑定域名即可;</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;但是因为之前已经开启了自定义域名， <code>enforce HTTPS</code> 无法勾选且怎么办？如图<br><img src="/myhexo/2018/05/10/Hexo框架下Next主题优化/before_clean_full_save.png" alt="before_clean_full_save">需要</p><ol><li>把 Custom domain 中的值清空，并点击 Save 进行保存；</li><li>在 Custom domain 中的填入之前清空的值，我这里是 zerolei.com ，填入后点击保存；</li><li>尝试在浏览器里主动访问 <a href="https://zerolei.com">https://zerolei.com</a> ，地址要根据自己的情况，注意协议类型是 https，正确情况下是能正常访问的；</li><li>刷新项目设置页，如果 enforce HTTPS 可勾选，勾选即可；</li><li>如果 enforce HTTPS 不可勾选，并且提示 Not yet available for your site because the certificate has not finished being issued”如图<br><img src="/myhexo/2018/05/10/Hexo框架下Next主题优化/clean_full_save.png" alt="clean_full_save"> 说明证书尚未申请完成，等待一天即可。</li></ol>]]></content:encoded>
       
-      <comments>http://zerolei.com/myhexo/2018/05/10/Hexo%E6%A1%86%E6%9E%B6%E4%B8%8BNext%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/#disqus_thread</comments>
+      <comments>https://zerolei.com/myhexo/2018/05/10/Hexo%E6%A1%86%E6%9E%B6%E4%B8%8BNext%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/#disqus_thread</comments>
     </item>
     
   </channel>
