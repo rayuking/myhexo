@@ -1,14 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[特殊的日子]]></title>
+    <url>%2Fmyhexo%2F2018%2F05%2F13%2F%E7%89%B9%E6%AE%8A%E7%9A%84%E6%97%A5%E5%AD%90%2F</url>
+    <content type="text"><![CDATA[:) &#160;&#160;&#160;&#160;&#160;&#160;&#160;感谢母亲在背后的默默支持!]]></content>
+      <categories>
+        <category>emotion</category>
+      </categories>
+      <tags>
+        <tag>节日</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Hexo框架下Next主题优化]]></title>
     <url>%2Fmyhexo%2F2018%2F05%2F10%2FHexo%E6%A1%86%E6%9E%B6%E4%B8%8BNext%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96%2F</url>
     <content type="text"><![CDATA[&#160;&#160;&#160;&#160;&#160;&#160;&#160;wangwlj已经总结的很好了 Hexo搭建的GitHub博客之优化大全 , 这里就切换中文,更改页脚,添加支持HTTPS补充三点 0x00 更改Next主题默认语言为中文,并不是常见的zh-CN在文件themes\next\_config.yml中 language: zh-Hans 0x01 更改页脚原页脚: 在文件\themes\next\layout\_partials\footer.swig中 1234&#123;% if theme.footer.powered %&#125; &lt;div class="powered-by"&gt;&#123;# #&#125;&#123;&#123; __('footer.powered', '&lt;a class="theme-link" target="_blank" href="https://hexo.io"&gt;Hexo&lt;/a&gt;') &#125;&#125;&#123;##&#125;&lt;/div&gt; 修改后的效果:详见Hexo-Next底部logo栏更改 0x02 给自定义域名添加支持 HTTPS&#160;&#160;&#160;&#160;&#160;&#160;&#160;简单来说，除了 HTTPS 自身带来的加密、防劫持等特性外，Github 官方基于 HTTPS 配合 CND，使得网站的加载速度更快，还能提供额外的防御 DDoS 攻击的保护。&#160;&#160;&#160;&#160;&#160;&#160;&#160;GitHub Pages Blog 原文：Custom domains on GitHub Pages gain support for HTTPS &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;未绑自定义人域名之前只需要到setting页勾选enforce HTTPS之后再绑定域名即可; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;但是因为之前已经开启了自定义域名， enforce HTTPS 无法勾选且怎么办？如图需要 把 Custom domain 中的值清空，并点击 Save 进行保存； 在 Custom domain 中的填入之前清空的值，我这里是 zerolei.com ，填入后点击保存； 尝试在浏览器里主动访问 https://zerolei.com ，地址要根据自己的情况，注意协议类型是 https，正确情况下是能正常访问的； 刷新项目设置页，如果 enforce HTTPS 可勾选，勾选即可； 如果 enforce HTTPS 不可勾选，并且提示 Not yet available for your site because the certificate has not finished being issued”如图 说明证书尚未申请完成，等待一天即可。]]></content>
       <categories>
-        <category>Hexo</category>
+        <category>hexo</category>
       </categories>
       <tags>
-        <tag>Hexo</tag>
+        <tag>hexo</tag>
+        <tag>next</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Perl常用编译指令]]></title>
+    <url>%2Fmyhexo%2F2018%2F03%2F09%2FPerl%E5%B8%B8%E7%94%A8%E7%BC%96%E8%AF%91%E6%8C%87%E4%BB%A4%2F</url>
+    <content type="text"><![CDATA[123456#!usr/bin/perl -w #&quot;-w&quot;equal &quot;use warnings; &quot;use warnings;use strict;use 5.012; #指定最低perl版本,会隐式的打开 strict 编译指令use diagnostics;use autodie;]]></content>
+      <categories>
+        <category>perl</category>
+      </categories>
+      <tags>
+        <tag>perl</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[justtest]]></title>
+    <url>%2Fmyhexo%2F2017%2F10%2F03%2Fjusttest%2F</url>
+    <content type="text"><![CDATA[测试添加图片 测试添加文摘content [author[source]] [link] [source_link_title] 测试添加引用 [title] [] [url] [link text]1code snippet 测试添加普通的代码块 1alert(&apos;Hello World!&apos;); alert(‘Hello World!’);]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Make-Blog]]></title>
+    <url>%2Fmyhexo%2F2017%2F08%2F19%2FMake-Blog%2F</url>
+    <content type="text"><![CDATA[1. 先安装 nodejs 和 git 下载hexo123$ mkdir hexo #创建一个文件夹$ cd hexo$ npm install -g hexo-cli 2. 用如下指令生成静态页面然后开启预览访问端口，在浏览器中打开 本地 查看页面12$ hexo generate$ hexo server 3. 创建github账号，新建库，名为: usename.github.io;下载部署工具hexo-deployer-git12$ npm install hexo-deployer-git --save$ hexo deploy 4. 可以绑定个人域名，可到 DNSPOD 设置DNS解析]]></content>
+      <categories>
+        <category>meke blog</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>make blog</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[简介Hexo]]></title>
+    <url>%2Fmyhexo%2F2017%2F08%2F18%2F%E7%AE%80%E4%BB%8BHexo%2F</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Create a new post1$ hexo new "My New Post" More info: Writing Generate static files1$ hexo generate More info: Generating Run server1$ hexo server More info: Server Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
       </tags>
   </entry>
 </search>

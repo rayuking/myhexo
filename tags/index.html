@@ -101,7 +101,7 @@
     root: '/myhexo/',
     scheme: 'Gemini',
     version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"right","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -126,7 +126,16 @@
 
 
 
-
+<script>
+    (function(){
+        if(''){
+            if (prompt('请输入文章密码') !== ''){
+                alert('密码错误！');
+                history.back();
+            }
+        }
+    })();
+</script>
   <title>标签 | Blog测试版</title>
   
 
@@ -146,7 +155,7 @@
     
   
 
-  <div class="container sidebar-position-left page-post-detail">
+  <div class="container sidebar-position-right page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -305,10 +314,10 @@
         
           <div class="tag-cloud">
             <div class="tag-cloud-title">
-                目前共计 1 个标签
+                目前共计 5 个标签
             </div>
             <div class="tag-cloud-tags">
-              <a href="/myhexo/tags/Hexo/" style="font-size: 12px; color: #ccc">Hexo</a>
+              <a href="/myhexo/tags/hexo/" style="font-size: 30px; color: #111">hexo</a> <a href="/myhexo/tags/make-blog/" style="font-size: 12px; color: #ccc">make blog</a> <a href="/myhexo/tags/next/" style="font-size: 12px; color: #ccc">next</a> <a href="/myhexo/tags/perl/" style="font-size: 12px; color: #ccc">perl</a> <a href="/myhexo/tags/节日/" style="font-size: 12px; color: #ccc">节日</a>
             </div>
           </div>
         
@@ -372,7 +381,7 @@
               
                 <a href="/myhexo/archives">
               
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -383,7 +392,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/myhexo/categories/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -394,7 +403,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/myhexo/tags/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -434,6 +443,24 @@
 
           
           
+            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://xuanwo.org/" title="xuanwo" target="_blank">xuanwo</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://wangwlj.com/" title="wangwlj" target="_blank">wangwlj</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
 
           
 
@@ -468,7 +495,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">426</span>
+    <span title="Site words total count">724</span>
   
 </div>
 
