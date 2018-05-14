@@ -23,49 +23,4 @@
         <tag>next</tag>
       </tags>
   </entry>
-  <entry>
-    <title><![CDATA[Perl常用编译指令]]></title>
-    <url>%2Fmyhexo%2F2018%2F03%2F09%2FPerl%E5%B8%B8%E7%94%A8%E7%BC%96%E8%AF%91%E6%8C%87%E4%BB%A4%2F</url>
-    <content type="text"><![CDATA[123456#!usr/bin/perl -w #&quot;-w&quot;equal &quot;use warnings; &quot;use warnings;use strict;use 5.012; #指定最低perl版本,会隐式的打开 strict 编译指令use diagnostics;use autodie;]]></content>
-      <categories>
-        <category>perl</category>
-      </categories>
-      <tags>
-        <tag>perl</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[justtest]]></title>
-    <url>%2Fmyhexo%2F2017%2F10%2F03%2Fjusttest%2F</url>
-    <content type="text"><![CDATA[测试添加图片 测试添加文摘content [author[source]] [link] [source_link_title] 测试添加引用 [title] [] [url] [link text]1code snippet 测试添加普通的代码块 1alert(&apos;Hello World!&apos;); alert(‘Hello World!’);]]></content>
-      <categories>
-        <category>hexo</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Make-Blog]]></title>
-    <url>%2Fmyhexo%2F2017%2F08%2F19%2FMake-Blog%2F</url>
-    <content type="text"><![CDATA[1. 先安装 nodejs 和 git 下载hexo123$ mkdir hexo #创建一个文件夹$ cd hexo$ npm install -g hexo-cli 2. 用如下指令生成静态页面然后开启预览访问端口，在浏览器中打开 本地 查看页面12$ hexo generate$ hexo server 3. 创建github账号，新建库，名为: usename.github.io;下载部署工具hexo-deployer-git12$ npm install hexo-deployer-git --save$ hexo deploy 4. 可以绑定个人域名，可到 DNSPOD 设置DNS解析]]></content>
-      <categories>
-        <category>meke blog</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>make blog</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[简介Hexo]]></title>
-    <url>%2Fmyhexo%2F2017%2F08%2F18%2F%E7%AE%80%E4%BB%8BHexo%2F</url>
-    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Create a new post1$ hexo new "My New Post" More info: Writing Generate static files1$ hexo generate More info: Generating Run server1$ hexo server More info: Server Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
-      <categories>
-        <category>hexo</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
 </search>
